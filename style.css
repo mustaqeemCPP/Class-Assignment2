@@ -1,0 +1,232 @@
+/* CSS Reset */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Signup page Styling */
+
+body {
+  background-color: #f5fbfa;
+  padding: 80px 120px;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.signup {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 80px;
+
+  > .SUcaption {
+    width: 500px;
+    margin-top: 120px;
+
+    > img {
+      width: 80px;
+      margin-bottom: 28px;
+    }
+
+    > h1 {
+      margin-bottom: 16px;
+      color: #000b0a;
+      font-size: 32px;
+    }
+
+    > p {
+      color: #737373;
+      line-height: 25px;
+      font-size: 14px;
+    }
+  }
+}
+
+span {
+  display: none;
+}
+
+
+/* Sign up page Caption */
+
+/* Form card styling */
+
+.formcard {
+  background-color: white;
+  width: 800px;
+  padding: 40px;
+  font-size: 12px;
+  color: #011c34;
+  border-radius: 12px;
+
+  .formfield1 {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 30px;
+  }
+
+  .formfield2 {
+    margin-bottom: 30px;
+  }
+
+  .terms {
+    text-align: center;
+    
+    > a {
+      color: #2ec4b6;
+    }
+  }
+}
+
+/* Label and Input Styling */
+
+label {
+  display: block;
+}
+
+.formfield1 input,
+.formfield1 select {
+  width: 238px;
+  padding: 14px 0 14px 16px;
+  border: 1.5px solid #f0f0f0;
+  border-radius: 4px;
+  color: #737373;
+  background-color: white;
+}
+
+.formfield1 label,
+.formfield2 label {
+  margin-bottom: 8px;
+}
+
+.formfield2 input,
+.formfield2 select,
+button {
+  width: 500px;
+  padding: 14px 0 14px 16px;
+  border: 1.5px solid #f0f0f0;
+  border-radius: 4px;
+  color: #737373;
+  background-color: white;
+}
+
+.formfield1 input:focus,
+.formfield2 input:focus {
+  border: 1.5px solid #2ec4b6;
+  outline: none;
+}
+
+/* Button Styling */
+
+button {
+  margin-bottom: 16px;
+  background-color: #2ec4b6;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* Mobile Responsiveness */
+
+@media  (max-width: 480px) {
+
+  /*Sign Up Page Styling  */
+
+  body {
+    padding: 0 24px;
+
+  }
+
+  .signup {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /* Sign up page Caption */
+
+  .SUcaption {
+    width: 350px;
+    margin-top: 10px;
+  }
+
+
+  .SUcaption img {
+    width: 40px;
+    margin-bottom: 20px;
+  }
+
+  .SUcaption h1 {
+    margin-bottom: 10px;
+    color: #000b0a;
+    font-size: 24px;
+  }
+
+  .SUcaption p {
+    display: none;
+  }
+
+  span {
+    color: #737373;
+    line-height: 20px;
+    font-size: 14px;
+    width: 350px;
+    display: block;
+  }
+
+
+  /* Form card styling */
+
+  .formcard {
+    background-color: white;
+    width: 330px;
+    padding: 16px;
+    font-size: 12px;
+    color: #011c34;
+    border-radius: 8px;
+  }
+
+  .formfield1 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 20px;
+  }
+
+  .formfield1 input,
+  .formfield1 select {
+    width: 290px;
+    padding: 14px 0 14px 16px;
+    border: 1.5px solid #f0f0f0;
+    border-radius: 4px;
+    color: #737373;
+    background-color: white;
+  }
+
+  .formfield2 input,
+  .formfield2 select {
+    width: 290px;
+    padding: 14px 0 14px 16px;
+    border: 1.5px solid #f0f0f0;
+    border-radius: 4px;
+    color: #737373;
+    background-color: white;
+  }
+  
+  button {
+    width: 290px;
+    margin-bottom: 16px;
+    background-color: #2ec4b6;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Google Font Link -->
+
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <main>
+      <section class="signup">
+
+         <!-- Sign up Caption -->
+
+        <div class="SUcaption">
+          <img src="./Logo.svg" alt="Logo" />
+          <h1>For Individuals</h1>
+          <p>
+            Start benefiting from the wellness experience. For companies looking
+            on increasing productivity, and improving organization wellness.
+          </p>
+          <span>Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.</span>
+        </div>
+
+        <!-- Form card -->
+        
+        <div class="formcard">
+          <form action="#">
+            <section class="formfield1">
+              <div>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" placeholder="Tolu" />
+              </div>
+              <div>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" />
+              </div>
+            </section>
+            <section class="formfield1">
+              <div>
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                  <option value="0">Select here</option>
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>
+                  <option value="3">Rather not say</option>
+                </select>
+              </div>
+              <div>
+                <label for="age">Date of Birth</label>
+                <input type="date" name="age" id="age">
+              </div>
+            </section>
+            <section class="formfield1">
+                <div>
+                    <label for="weight">Weight (KG)</label>
+                    <input type="text" id="weight" placeholder="Enter Weight">
+                </div>
+                <div>
+                    <label for="height">Height (CM)</label>
+                    <input type="text" for="height" placeholder="Enter height here">
+                </div>
+            </section>
+            <section class="formfield2">
+                <div>
+                    <label for="activity">Activity Level</label>
+                    <select name="activity" id="activity">
+                        <option value="0">Select here</option>
+                    </select>
+                </div>
+            </section>
+            <section class="formfield2">
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+                </div>
+            </section>
+            <button value="submit">Register</button>
+            <p class="terms">By clicking Register, you agree to our <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a></p>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
